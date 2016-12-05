@@ -1,0 +1,79 @@
+<script type="text/javascript">
+	
+	// Arrays
+	var student1 = "Sean";
+	var student2 = "Drew";
+	var student3 = "Daniel";
+	var student4 = "Kyle";
+
+	// Arrays!! a single variable with a numbered list of parts.
+	var students = [];
+	students = ["Sean", "Drew", "Daniel", "Kyle"];
+	console.log(students);
+
+	var nfcSouth1 = "Falcons";
+	var nfcSouth2 = "Saints";
+	var nfcSouth3 = "Panthers";
+	var nfcSouth4 = "Bucs";
+
+	var nfcSouth = ["Falcons","Saints","Panthers","Bucs"];
+
+	// any datatype can go in any position
+	// booleans
+	// Numbers
+	// strings
+	// objects
+	// arrays
+
+	// if an array, the frist element, unless otherwise decalred, is always 0.
+	// console.log(nfcSouth1);
+	// console.log(nfcSouth[0]);
+	// console.log(nfcSouth[3]);
+
+	// Cool methods from an array...
+	console.log(students);
+	students.pop(); // will remove the last element from the array
+	console.log(students);
+
+	students.push("Ryan"); //push adds an element to the end of the array
+	console.log(students);
+
+	students = ["Sean", "Drew", "Daniel", "Kyle"];
+	var userName = prompt("Please enter your name.");
+	if( (students[0] == userName) || (students[1] == userName) || (students[2] == userName) ||(students[3] == userName)){
+		console.log("I'm glad your in class");
+	}else{
+		students.push(userName);
+	}
+
+	var studentSeat = prompt("Enter a seat number.");
+	console.log(students[studentSeat-1]);
+
+
+// 99 bottles of beer on th ewall, 99 bottles...
+// Loop.
+// For, while, foreach. map.
+// for takes 3 parameters... 
+// 	1. initilize a counter (i = incrament)
+// 	2. condition on which to keep the loop going
+// 	3. what to do each time through the loop (at the end)
+// Create a boolean called "Found"
+students = ["Sean", "Drew", "Daniel", "Kyle"];
+var whateverUserEntered = "Daniel";
+
+if (students.indexOf(whateverUserEntered) != -1){
+	// user is in the class
+}else{
+	// user is not in the class
+}
+
+if(found){ //if found is true
+	console.log("You are in the class");
+}else{
+	students.push(whateverUserEntered)
+}
+
+
+
+
+</script>
